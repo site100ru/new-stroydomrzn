@@ -132,6 +132,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <body class="  ">
 <script src="js/jquery.min.js"></script>
 <div class="wrap_body   wrap_product" style="opacity:1">
+<!-- ===== OLD HEADER START (заменён хедером с index.html, код сохранён) ===== 
         <header class="block_black header_absolute block_transparent">
         <div class="header-fixed do">
                         <div style="width: 100%;"></div>
@@ -271,6 +272,261 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 
 
+ ===== OLD HEADER END ===== -->
+            <header class="block_black">
+                <div class="header-fixed do">
+                    <div style="width: 100%;"></div>
+                    <div class="header-fixed-logo">
+                        <a href="index.html">
+                            <div class="logo-el">
+                                <img src="img/logo.svg" title="APS-DSK" alt="APS-DSK">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-fixed-logo">
+                                <a href="index.html">
+                                    <div class="logo-el">
+                                        <img src="img/logo.svg" title="APS-DSK" alt="APS-DSK">
+                                    </div>
+                                    <div class="logo-el">
+                                        <img src="img/logo.svg" title="APS-DSK" alt="APS-DSK">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header-fixed-content">
+                            <div class="header-fixed-contacts">
+                                <div class="header-fixed-content-col col-credit">
+                                    <a class="btn-credit" href="/stroitelstvo_doma/dom-v-kredit.html">Льготная ипотека 6%</a>
+                                </div>
+                                <div class="header-fixed-content-col">
+                                    <div class="wrap_gorod">	
+                                        <div class="phone gorod select_gorod bold">Рязань</div>
+                                        <div class="text small">Ваш регион</div>
+                                        <div id="regionConfirmPopup" class="block_white popup">
+                                        <p class="regionConfirmSuppose">Ваш регион <span>Москва</span>?</p>
+                                        <input type="button" id="rightRegion" class="btn" value="Да" onclick="$(&#39;#regionConfirmPopup&#39;).hide();">
+                                        <input type="button" id="wrongRegion" class="btn" value="Нет" onclick="getGeoCity();$(&#39;#regionConfirmPopup&#39;).hide();">	
+                                    </div>
+                                    </div>
+                                    <div id="" class="mainPhone phone bold"><a class="mgo-msk" href="tel:+74951595316">8 (495) 159-53-16</a></div>
+                                    <style>
+                                        .wrap_gorod {
+                                            display: flex;
+                                            flex-direction: row-reverse;
+                                            justify-content: flex-start;
+                                            align-items: center;
+                                        }
+
+                                        .select_gorod {
+                                            margin-left: 10px;
+                                        }
+
+                                        @media (min-width: 768px) {
+                                            .wrap_gorod ~ .mainPhone {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+                                <!--div class="header-fixed-content-col">
+                                <div id="" class="mainPhone phone bold"><a class="mgo-msk" href="tel:+74951595316">8 (495) 565-30-55</a></div>
+                                <div class="text small" id="phone_region">В вашем регионе</div>
+                                </div-->
+                                <div class="header-fixed-content-col">
+                                    <div class="phone bold">
+                                        <a class="mgo-spb" href="tel:88123366079">8 (812) 336-60-79</a>
+                                    </div>
+                                    <div class="text small">Рязань</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="header-fixed-menu">
+                            <ul class="topmenu">
+                                <li><a href="index.html">Главная</a></li>
+                                <li id="proj" class="child"><a href="archive.html">Проекты</a>
+                                    <ul style="opacity:0;visibility:hidden">
+                                        <li><a href="archive.html">Все проекты</a></li>
+                                        <li><a href="archive.html">Деревянные дома</a></li>
+                                        <li><a href="archive.html">Каменные дома</a></li>
+                                    </ul>
+                                </li>
+                                <li id="proj" class="child"><a href="archive.html">Контакты</a></li>
+                                <li class="helper"></li>
+                            </ul>
+                            <div class="dropmenu">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <!-- Поиск -->
+                            <!--div id="search">
+                                <div class="button-search glyphicon glyphicon-search"></div>
+                                <input type="text" name="filter_name" value="" onclick="this.value = &#39;&#39;;" onkeydown="this.style.color = &#39;#fff&#39;;" class="ui-autocomplete-input" autocomplete="off">
+                                <div id="search_response" style="display:none;"></div>
+                            </div-->
+                            <div class="search-spacer"></div>
+                            <div class="phoneCatalogMobile">
+                                <a class="mgo-msk" href="tel:+74951595316">8 (495) 159-53-16</a>
+                            </div>
+                            <a class="btn-credit" href="/stroitelstvo_doma/dom-v-kredit.html">Льготная ипотека 6%</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="header-fixed-contacts header-fixed-contacts--mobile">
+                <div class="header-fixed-content-col">
+                    <div class="wrap_gorod">	
+        <div class="phone gorod select_gorod bold">Москва</div>
+        <div class="text small">Ваш регион</div>
+                <div id="regionConfirmPopup" class="block_white popup">
+                <p class="regionConfirmSuppose">Ваш регион <span>Москва</span>?</p>
+                <input type="button" id="rightRegion" class="btn" value="Да" onclick="$(&#39;#regionConfirmPopup&#39;).hide();">
+                <input type="button" id="wrongRegion" class="btn" value="Нет" onclick="getGeoCity();$(&#39;#regionConfirmPopup&#39;).hide();">	
+            </div>
+        </div>                <div id="" class="mainPhone phone bold"><a class="mgo-msk" href="tel:+74951595316">8 (495) 159-53-16</a></div>
+                    <style>
+                        .wrap_gorod {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+
+                        .select_gorod {
+                            margin-left: 10px;
+                        }
+
+                        @media (min-width: 768px) {
+                            .wrap_gorod ~ .mainPhone {
+                                display: none;
+                            }
+                        }
+                    </style>
+                </div>
+                                        <div class="header-fixed-content-col">
+                <div class="phone bold"><a href="tel:88123366079">8 (812) 336-60-79</a></div>
+                <div class="text small">Санкт-Петербург</div>
+                </div>
+                    </div>
+                </div>
+
+<!-- ============================================================
+     HERO-СЛАЙДЕР СКРЫТ: блок-баннер скопирован из шапки главной,
+     на этой странице он не нужен. Разметка сохранена (закомментирована).
+     ============================================================ -->
+<!--
+                <div id="block_header_top">
+
+                    <div id="banner_landing_htest" data-interval="0" data-ride="carousel" class=" mobile-status-0 carousel slide type_navi_1">
+-->
+                        <!--div class="wrap_nav">
+                            <div class="wrap-carousel-control">
+                                <!-- Элементы управления --
+                                <a class="left carousel-control btn btn-ico  btn-default" href="#banner_landing_htest" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Предыдущий</span>
+                                </a>
+                                <a class="right carousel-control btn btn-ico  btn-default" href="#banner_landing_htest" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Следующий</span>
+                                </a>
+                            </div>
+                        </div-->
+<!--
+                        <div class="carousel-inner">
+                            <div class="item  active">
+-->
+                                <!--div class="carousel-text">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="wrap_text">
+                                                    <div class="text">
+                                                        <p>Открытый показ домов в КП "Крекшино Вайт Вилладж", ждем Вас в любой день с 10 до 19 часов!</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <div class="btn btn-white btn-fixed-width">
+                                                            <a href="/pokaz-domov-v-kp-kryokshino.html">Подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div-->
+<!--
+                                <a href="/pokaz-domov-v-kp-kryokshino.html" class="slider_banner_link mobile">
+                                    <img title="Открытый показ домов в КП " Крекшино="" Вайт="" Вилладж",="" ждем="" Вас="" в="" любой="" день="" с="" 10="" до="" 19="" часов!"="" src="img/2000x670-3.jpg">
+                                </a>
+                            </div>
+-->
+                            <!--div class="item ">
+                                    <div class="carousel-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                                                            <div class="wrap_text">
+                                                        <div class="text"></div>
+                                                                                                        <div class="buttons">
+                                                                <div class="btn btn-white btn-fixed-width"><a href="/proizvodstvobrusa/kleeniy_brus.html">Смотреть</a></div>
+                                                            </div>
+                                                                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="/proizvodstvobrusa/kleeniy_brus.html" class="slider_banner_link mobile"><img title="" src="img/desc.jpg"></a>
+                            </div>
+                            <div class="item ">
+                                    <div class="carousel-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                                                            <div class="wrap_text">
+                                                        <div class="text"><p>
+                Расcрочка на строительство дома - 0%</p>
+            </div>
+                                                                                                        <div class="buttons">
+                                                                <div class="btn btn-white btn-fixed-width"><a href="/fall_project/">подробнее</a></div>
+                                                            </div>
+                                                                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="/fall_project/" class="slider_banner_link mobile"><img title="Расcрочка на строительство дома - 0%" src="img/desctop2.jpg"></a>
+                            </div>
+                            <div class="item ">
+                                    <div class="carousel-text">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                                                            <div class="wrap_text">
+                                                        <div class="text"><p>
+                Ипотека 6% с первоначальным взносом 20%</p>
+            </div>
+                                                                                                        <div class="buttons">
+                                                                <div class="btn btn-white btn-fixed-width"><a href="/fall_project/">Выбрать дом</a></div>
+                                                            </div>
+                                                                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="/fall_project/" class="slider_banner_link mobile"><img title="Ипотека 6% с первоначальным взносом 20%" src="img/desctop-1.jpg"></a>
+                            </div-->
+<!--
+                        </div>
+                    </div>
+                </div>
+-->
+            </header>
     <div class="breadcrumb gray mini">
         <div class="container">
             <div class="row">
@@ -282,7 +538,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             </div>
         </div>
     </div>
-</header>
+<!-- </header> (старый закрывающий тег, заменён выше) -->
 
 <div class="information product block_transparent">
     <div class="head_page block_transparent mcc m_w">
@@ -2417,6 +2673,7 @@ if(typeof(data_load)=='undefined'){
             </div>
         <div class="el" style="height: 1px; overflow: hidden; opacity: 0;"><input style="color: black" name="family" placeholder="Фамилия" type="text"></div><div style="height: 1px; opacity: 0; overflow: hidden;"><input name="acceptance" type="checkbox" value="agreed"> Я прочитал правила пользования и согласен на всё</div></form>
     </div>
+<!-- ===== OLD FOOTER START (заменён футером с index.html, код сохранён) ===== 
 <footer class="block_black mcc m_w">
         <div class="footer">
         <div class="border_b_gray hide_xs">
@@ -2589,6 +2846,181 @@ if(typeof(data_load)=='undefined'){
             </div>
     
 </footer>
+ ===== OLD FOOTER END ===== -->
+                <footer class="block_black mcc m_w">
+                    <div class="footer">
+                        <!-- Footer menu -->
+                        <!--div class="border_b_gray hide_xs">
+                            <div class="container row">
+                                <div class="col-xs-12 col-md-10 hide_xs">
+                                    <div class="row">
+                                        <div class="col col-xs-3 col-md-3">
+                                            <p class="head text-uppercase">Проекты</p>
+                                        </div>
+                                        <div class="col col-xs-3 col-md-3">
+                                                                        <p class="head text-uppercase">Компания</p>
+                                        </div>
+                                        <div class="col col-xs-3 col-md-3">
+                                                                        <p class="head text-uppercase">Услуги</p>
+                                        </div>
+                                        <div class="col col-xs-3 col-md-3">
+                                                                        <p class="head text-uppercase">Информация</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-2 c_contact c_contact_head">
+                                    <p class="head text-uppercase">Контакты</p>
+                                </div>
+                            </div>
+                        </div-->
+                        <!-- Footer contacts -->
+                        <!--div class="container row">
+                            <div class="col-xs-12 col-md-10 hide_xs">
+                                <div class="row">
+                                                        <div class="col col-xs-3 col-md-3">
+                                        <ul class="list-unstyled list-menu">
+                                                                        <li class="gray mini"><a href="archive.html">Все проекты</a></li>
+                                                                        <li class="gray mini"><a href="archive.html">Клееный брус</a></li>
+                                                                        <li class="gray mini"><a href="archive.html">Комбинированные</a></li>
+                                                                        <li class="gray mini"><a href="archive.html">Каменные дома</a></li>
+                                                                        <li class="gray mini"><a href="archive.html">Авторские</a></li>
+                                                                        <li class="gray mini"><a href="/individual_proektirvoanie/">Индивидуальный проект</a></li>
+                                            <li class="gray mini"><a href="javascript:void(0)" target="_blank">Каркасные дома</a>
+                                            </li>
+                                                                    </ul>
+                                    </div>
+                                                                            <div class="col col-xs-3 col-md-3">
+                                                                <ul class="list-unstyled list-menu">
+                                                                        <li class="gray mini"><a href="/about/o_nas.html">О нас</a></li>
+                                                                        <li class="gray mini"><a href="/proizvodstvobrusa/kleeniy_brus.html">Производство</a></li>
+                                                                                                    <li class="gray mini"><a href="/about/companycharity.html">Благотворительность</a></li>
+                                                                                                    <li class="gray mini"><a href="/about/garantii_kontrol.html">Гарантия и сертификаты</a></li>
+                                                                                                    <li class="gray mini"><a href="/about/jobs_info.html">Вакансии</a></li>
+                                                                                                    <li class="gray mini"><a href="/about/partnery-dlya-oformleniya-interera.html">Партнеры</a></li>
+                                                                                                    <li class="gray mini"><a href="/about/jobs/brigades.html">Бригадам</a></li>
+                                                                                                                                <li class="gray mini"><a href="/news">Новости</a></li>
+                                                                                                                            </ul>
+                                                                                    </div>
+                                                        <div class="col col-xs-3 col-md-3">
+                                                                <ul class="list-unstyled list-menu">
+                                                                        <li class="gray mini"><a href="/stroitelstvo_doma/stroitelstvo-domov-iz-kleenogo-brusa.html">Строительство из клееного бруса</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/stroitelstvo-domov-iz-blokov.html">Строительство каменных домов</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/stroitelstvo-iz-blokov-porotherm.html">Строительство из блоков Porotherm</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/etapy-stroitelstva-doma-iz-kleenogo-brusa.html">Этапы строительства</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/otdelka-doma-iz-kleenogo-brusa.html">Отделка дома</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/montazh-inzhenernykh-kommunikatsiy-v-dome.html">Инженерные коммуникации</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/uchastki-dlya-doma.html">Готовые дома и участки</a></li>
+                                                                                                    <li class="gray mini"><a href="/stroitelstvo_doma/stroitelstvo-iz-kleenogo-brusa/tehn_contr.html">Контроль работ</a></li>
+                                                                                                                                                            <li class="gray mini"><a href="/kolorizator.html">Подбор цветового решения</a></li>
+                                                                                                </ul>
+                                                                                    </div>
+                                                        <div class="col col-xs-3 col-md-3">
+                                                                <ul class="list-unstyled list-menu">
+                                                                        <li class="gray mini"><a href="/prod/vr_tur.html">Обзор дома в VR</a></li>
+                                                                                                                                                                                    </ul>
+                                                                <a class="descktopAppLink" href="javascript:void(0)" target="_blank">
+                                            <img src="img/aps_app.png" alt="">
+                                        </a>
+                                                                                    </div>
+                                                    </div>
+                            </div>
+                            <div class="col col-xs-12 col-md-2 c_contact">
+                                <ul class="list-unstyled">
+                                    <li class="phone roistat-phone big">
+                                        <div class="text gray mini">Бесплатно по России</div>
+                                        <div class="m-call-tracking-widget" data-settings="{&quot;id&quot;:10866}"><a href="tel:+7 (800) 500-35-76">8 (800) 500-35-76</a></div>
+                                    </li>
+                                    <li class="phone border_b_gray big">
+                                        <div class="text gray mini">
+                                            <div class="wrap_gorod">	
+                    <div class="phone gorod select_gorod bold">Москва</div>
+                    <div class="text small">Ваш регион</div>
+                            <div id="regionConfirmPopup" class="block_white popup">
+                            <p class="regionConfirmSuppose">Ваш регион <span>Москва</span>?</p>
+                            <input type="button" id="rightRegion" class="btn" value="Да" onclick="$(&#39;#regionConfirmPopup&#39;).hide();">
+                            <input type="button" id="wrongRegion" class="btn" value="Нет" onclick="getGeoCity();$(&#39;#regionConfirmPopup&#39;).hide();">	
+                        </div>
+                    </div>                        </div>
+                                        <div class="mainPhone"><a class="mgo-msk" href="tel:+74951595316">8 (495) 159-53-16</a></div>
+
+                                    </li>
+                                    <li class="mini gray">г. Москва, 1-й Красносельский переулок д. 13</li>
+                                    <li class="mini gray">пн-пт: 9:00-20:00<br>
+                                        сб: 10:00-18:00<br>
+                                        вс: (по договоренности)
+                                    </li>
+                                </ul>
+                                <a class="mobileAppLink" href="javascript:void(0)" target="_blank">
+                                    <img src="img/aps_app.png" alt="">
+                                </a>
+                            </div>
+                        </div-->
+                    </div>
+                    
+                    <!-- Footer bottom -->
+                    <div class="footer_bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col col-xs-12 col-md-10 col-lg-10">
+                                    <div class="row">
+                                        <div class="col col-sm-3 col-md-3 col-lg-3 gray mini"></div>
+                                        <div class="col col-sm-6 col-md-6 col-lg-6 gray mini">
+                                            <a href="/about/politika_konfidencialnosti.html">Политика конфиденциальности</a>
+                                            <br>Строй Основа - строительство деревянных и каменных домов ©2010-2026
+                                        </div>
+                                        <!--div class="col col-social col-xs-6 col-sm-3 col-md-3 col-lg-3 gray mini">
+                                            <div class="social">
+                                                <a target="blank_" href="javascript:void(0)" class="ico i_vk"></a>
+                                                <a target="blank_" href="javascript:void(0)" class="ico i_rutube">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="23px" height="23px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 23 23" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                <defs>
+                <style type="text/css">
+                
+                    .str0 {stroke:white;stroke-width:0.35;stroke-miterlimit:2.61313}
+                    .fil1 {fill:none}
+                    .fil0 {fill:white;fill-rule:nonzero}
+                
+                </style>
+                <clippath id="id0">
+                    <path d="M5.58 0l11.84 0c3.08,0 5.58,2.5 5.58,5.58l0 11.84c0,3.08 -2.5,5.58 -5.58,5.58l-11.84 0c-3.08,0 -5.58,-2.5 -5.58,-5.58l0 -11.84c0,-3.08 2.5,-5.58 5.58,-5.58z"></path>
+                </clippath>
+                </defs>
+                <g id="Слой_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <g>
+                </g>
+                <g style="clip-path:url(#id0)">
+                <g id="_2575538289552">
+                    <path class="fil0" d="M14.21 10.97l-6.8 0 0 -2.68 6.8 0c0.39,0 0.67,0.07 0.81,0.19 0.14,0.12 0.22,0.34 0.22,0.67l0 0.96c0,0.35 -0.08,0.57 -0.22,0.69 -0.14,0.12 -0.42,0.18 -0.81,0.18l0 -0.01zm0.46 -5.22l-10.14 0 0 11.5 2.88 0 0 -3.74 5.31 0 2.52 3.74 3.23 0 -2.78 -3.76c1.03,-0.15 1.49,-0.46 1.86,-0.98 0.38,-0.52 0.57,-1.35 0.57,-2.45l0 -0.86c0,-0.66 -0.06,-1.17 -0.19,-1.57 -0.12,-0.4 -0.32,-0.74 -0.62,-1.05 -0.31,-0.3 -0.65,-0.5 -1.07,-0.64 -0.41,-0.12 -0.93,-0.19 -1.57,-0.19l0 0z"></path>
+                    <path class="fil0" d="M34.5 0c0,6.35 -5.15,11.5 -11.5,11.5 -1.29,0 -2.53,-0.21 -3.69,-0.61 0.02,-0.27 0.03,-0.55 0.03,-0.83l0 -0.86c0,-0.73 -0.07,-1.38 -0.24,-1.93 -0.18,-0.59 -0.49,-1.09 -0.9,-1.53l-0.02 -0.03 -0.03 -0.02c-0.44,-0.42 -0.94,-0.71 -1.52,-0.91l-0.02 0 -0.03 -0.01c-0.55,-0.16 -1.19,-0.24 -1.91,-0.24l-1.22 0 0 0 -1.02 0c-0.6,-1.39 -0.93,-2.92 -0.93,-4.53 0,-6.35 5.15,-11.5 11.5,-11.5 6.35,0 11.5,5.15 11.5,11.5z"></path>
+                </g>
+                </g>
+                <path class="fil1" d="M5.58 0l11.84 0c3.08,0 5.58,2.5 5.58,5.58l0 11.84c0,3.08 -2.5,5.58 -5.58,5.58l-11.84 0c-3.08,0 -5.58,-2.5 -5.58,-5.58l0 -11.84c0,-3.08 2.5,-5.58 5.58,-5.58z"></path>
+                <path class="fil1 str0" d="M5.58 0.17l11.84 0c2.99,0 5.41,2.42 5.41,5.41l0 11.84c0,2.99 -2.42,5.41 -5.41,5.41l-11.84 0c-2.99,0 -5.41,-2.42 -5.41,-5.41l0 -11.84c0,-2.99 2.42,-5.41 5.41,-5.41z"></path>
+                </g>
+                </svg>
+                                                </a>
+                                                <a target="blank_" href="javascript:void(0)" class="ico i_yt"></a>
+                                                <a target="blank_" href="javascript:void(0)" class="ico i_yd"></a>
+                                                <a target="blank_" href="javascript:void(0)" class="ico i_tt"></a>
+                                            </div>
+                                        </div-->
+                                        <div class="col col-mail col-xs-6 col-sm-3 col-md-3 col-lg-3 gray mini">
+                                            <!--Пишите нам<br><a class="t_white" href="mailto:info@domostroy.ru">info@domostroy.ru</a>-->
+                                            Представленные цены на сайте не являются
+                                            публичной офертой
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--div class="col mini col-w col-xs-12 col-md-2 col-lg-2 c_contact c_w">
+                                    <img src="img/logo_pay.png" style="width:100%;max-width:278px;">
+                                </div-->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer_bottom ssss"></div>
+                </footer>
 
 <div id="dialog-form"></div>
 
