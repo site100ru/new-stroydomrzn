@@ -9981,9 +9981,6 @@ header.header_absolute .header-fixed-content-col .text {
     margin: -51px 0 0 0;
 }
 
-.wrap_category .header-fixed.do .header-fixed-menu {
-    margin: -51px 25px 0 0;
-}
 
 .information {
     margin-top: -230px;
@@ -11673,7 +11670,7 @@ header #search {
     .dropmenu {
         width: 50px;
         height: 50px;
-        /*padding-top: 18px;*/
+        padding-top: 18px;
     }
 
     header #search.full_search {
@@ -18736,10 +18733,6 @@ header .btn-credit:hover {
         padding: 0;
     }
 
-    .logo-el img {
-        max-width: 80px;
-    }
-
     .header-fixed.do #search {
         display: block;
     }
@@ -18757,14 +18750,14 @@ header .btn-credit:hover {
         margin-right: 10px;
     }
 
-    .dropmenu {
+    /* .dropmenu {
         width: 70px;
         height: 75px;
         padding-top: 32px;
-    }
+    } */
 
     .dropmenu.is-active {
-        padding-top: 32px;
+        padding-top: 12px;
     }
 
     header #search.full_search {
@@ -18804,10 +18797,6 @@ header .btn-credit:hover {
         padding: 10px 0 10px 15px;
     }
 
-    .header-fixed>.header-fixed-logo .logo-el img {
-        max-width: 104px;
-    }
-
     .header-fixed>.header-fixed-logo .logo-el:nth-child(1) {
         display: block;
         max-width: unset;
@@ -18841,6 +18830,10 @@ header .btn-credit:hover {
 
     .wrap_body {
         padding-top: 180px;
+    }
+
+    .header-fixed .row:first-child {
+        padding: 0;
     }
 }
 
@@ -22175,6 +22168,7 @@ header .header-fixed-contacts--mobile,
         margin-right: 0;
         position: relative;
         z-index: 1;
+        padding-top: 30px;
     }
 
     .header-fixed-contacts--mobile .wrap_gorod~.mainPhone {
@@ -22366,20 +22360,11 @@ header .header-fixed-contacts--mobile,
         min-width: 190px;
     }
 
-    .header-fixed.do img {
-        max-width: 90px;
-        min-width: 90px;
-    }
 }
 
 @media (min-width: 1600px) {
     .logo-el img {
         min-width: 190px;
-    }
-
-    .header-fixed.do img {
-        max-width: 90px;
-        min-width: 90px;
     }
 }
 
