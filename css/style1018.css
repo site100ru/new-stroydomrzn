@@ -6273,6 +6273,7 @@ span.abs_rt {
 
     .header-fixed .header-fixed-menu .btn-credit {
         margin: 0 auto;
+        z-index: 99;
     }
 
     .header-fixed .header-fixed-menu .dropmenu {
