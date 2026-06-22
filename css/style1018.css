@@ -4257,10 +4257,6 @@ span.abs_rt {
         margin: 0 auto;
     }
 
-    .header-fixed>.header-fixed-logo {
-        min-width: 95px;
-    }
-
     .header-fixed-menu .btn-credit {
         margin-right: 10px;
         padding: 5px 12px;
